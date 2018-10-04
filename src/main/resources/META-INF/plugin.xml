@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>de.fhluebeck.opemjmlplugin</id>
+    <name>OpenJML/ESC</name>
+    <vendor email="support@sgcode.de" url="http://www.sgcode.de">sgcode</vendor>
+
+    <description><![CDATA[
+    This Plugin allows to run OpenJML/ESC to verify java programs annotated with JML.
+    ]]></description>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <applicationConfigurable instance="fh.luebeck.openjml.setting.JmlConfigurable"/>
+        <applicationService serviceImplementation="fh.luebeck.openjml.setting.JmlPersistantConfig"/>
+    </extensions>
+
+    <actions>
+        <group id="openjml-menu" text="OpenJML">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="openjml-intellij-plugin.runaction"
+                    class="fh.luebeck.openjml.actions.JmlRunAction"
+                    text="Run OpenJML/ESC"/>
+        </group>
+    </actions>
+</idea-plugin>

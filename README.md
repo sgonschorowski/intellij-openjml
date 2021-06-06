@@ -1,4 +1,8 @@
 # OpenJML Plugin for IntelliJ IDEA  
+
+__This project will not be developed any further. Don't hesitate to fork and develop this project__
+
+
 This Plugin provides the OpenJML/ESC to IntelliJ IDEA. 
 
 ## Getting started
